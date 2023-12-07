@@ -5,42 +5,42 @@ from math import e
 
 def IVP11(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y1.append(X)
         x1.append(T)
         X = X+stepSize*(2-2*(X)-e**(-4*T))
         T = T+stepSize
 def IVP12(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y2.append(X)
         x2.append(T)
         X = X+stepSize*(2-2*(X)-e**(-4*T))
         T = T+stepSize
 def IVP13(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y3.append(X)
         x3.append(T)
         X = X+stepSize*(2-2*(X)-e**(-4*T))
         T = T+stepSize
 def IVP21(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y4.append(X)
         x4.append(T)
         X = X+stepSize*(X+(5*(e**(T/2))*math.cos(5*T))-((1/2)*(e**(T/2))*math.sin(5*T)))
         T = T+stepSize
 def IVP22(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y5.append(X)
         x5.append(T)
         X = X+stepSize*(X+(5*(e**(T/2))*math.cos(5*T))-((1/2)*(e**(T/2))*math.sin(5*T)))
         T = T+stepSize
 def IVP23(stepSize,X,T):
     #x1 = x0+hf(x0,t0)
-    while T < 5:
+    while T <= 5:
         y6.append(X)
         x6.append(T)
         X = X+stepSize*(X+(5*(e**(T/2))*math.cos(5*T))-((1/2)*(e**(T/2))*math.sin(5*T)))
